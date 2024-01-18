@@ -1,0 +1,113 @@
+/*global*/
+body{
+    font-family: Arial;
+}
+*{
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+
+    max-width:  340px;
+    max-height: 340px;
+    object-fit: fill;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h4{
+    color: rgb(12, 189, 12);
+}
+
+
+/*utilities*/
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contain{
+    width: 95%;
+    margin-right: auto;
+}
+.title{
+    width: 63%;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+/*header*/
+header{
+    background-image: url(./img/header.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 10px;
+}
+.header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+    height: 250px;
+    
+}
+
+
+/*main*/
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    
+}
+.flex-item{
+    background-color: #f3f3f3;
+    padding: 0px;
+    margin: 10px;
+    text-align: left;
+    width: 80%;
+    border-style: solid;
+    border-color: #eeeeee;
+}
+.flex-item h2,
+.flex-item p,
+.flex-item h4{
+    margin: 10px;
+}
+
+
+
+.flex-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+button{
+    border: none;
+    width: 320px;
+    background-color: rgb(208, 139, 11);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
