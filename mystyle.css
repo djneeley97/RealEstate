@@ -1,47 +1,30 @@
 /*global*/
-body{
-    font-family: Arial;
-}
 *{
-    line-height: 1;
     margin: 0px;
     padding: 0px;
 }
-
-img{
-
-    max-width:  340px;
-    max-height: 340px;
-    object-fit: fill;
-
+body{
+    font-family: Arial;
 }
 a{
     text-decoration: none;
     color: white;
 }
-h4{
-    color: rgb(12, 189, 12);
+img{
+    max-width: 100%;
 }
-
+ul{
+    margin: 10px 20px;
+}
 
 /*utilities*/
 .container{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.contain{
-    width: 95%;
-    margin-right: auto;
-}
-.title{
-    width: 63%;
-    text-align: center;
-    margin-bottom: -10px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*header*/
-header{
+.site-init{
     background-image: url(./img/header.jpg);
     background-size: cover;
     height: 40vh;
@@ -49,20 +32,23 @@ header{
 }
 .header-flex{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    margin: 10px;
 }
 .header-text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: red;
-    height: 250px;
-    
+    height: 35vh;
 }
-
+.menu a{
+    margin-right: 20px;
+}
+header p{
+    font-size: 20px;
+}
 
 /*main*/
 .flex-about{
@@ -71,43 +57,53 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    
+.flex-about p{
+    margin-left: 10px;
 }
 .flex-item{
     background-color: #f3f3f3;
     padding: 0px;
-    margin: 10px;
     text-align: left;
-    width: 80%;
+    width: 90%;
     border-style: solid;
     border-color: #eeeeee;
 }
-.flex-item h2,
-.flex-item p,
-.flex-item h4{
-    margin: 10px;
-}
-
-
-
-.flex-icon{
+.flex-houses{
     display: flex;
-    justify-content: space-evenly;
-    align-items: start;
+    flex-direction: row;
+    width: 80%;
+}
+.price{
+    color: rgb(2, 198, 2);
+    font-weight: bold;
 }
 button{
+    display: block;
     border: none;
-    width: 320px;
+    width: 95%;
     background-color: rgb(208, 139, 11);
     color: white;
     margin: 10px;
+    margin-top: 10px;
     padding: 10px;
     justify-content: center;
+}
+
+/*footer*/
+.footer-main{
+    background-image: url(./img/encuentra.jpg);
+    background-size: cover;
+    height: 40vh;
+    color: white;
+}
+.flex-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+
+.flex-footer button{
+    margin: 20px;
 }
