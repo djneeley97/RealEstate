@@ -16,6 +16,7 @@ body{
 a{
     text-decoration: none;
     color: white;
+    font-size: 1.2rem;
 }
 img{
     max-width: 100%;
@@ -65,7 +66,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 35vh;
+    height: 25vh;
 }
 .menu a{
     margin-right: 2rem;
@@ -75,7 +76,7 @@ header p{
 }
 @media(max-width:768px){
     .site-init{
-        height: 22vh; 
+        height: 30vh; 
     }
     .site-init p{
         font-size: 1.5rem;
@@ -135,11 +136,12 @@ button{
         align-content: center;
     }
 }
+@media(max-width:768px){
     .flex-houses{
         flex-direction: column;
         align-content: center;
     }
-
+}
 
 
 /*footer*/
@@ -156,11 +158,14 @@ button{
     align-content: center;
     padding: 10rem;
 }
-
 .flex-footer button{
     margin: 2rem;
 }
-
+@media(max-width:768px){
+    .flex-footer{
+        height: 20vh;
+    }
+}
 /*contact form*/
 
 fieldset{
