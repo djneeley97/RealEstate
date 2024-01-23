@@ -1,4 +1,11 @@
 /*global*/
+:root{
+    --primary:rgb(208, 139, 11);
+    --secondary: rgb(2, 198, 2);
+}
+html{
+    font-size: 62.5%;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -16,12 +23,25 @@ img{
 ul{
     margin: 10px 20px;
 }
+h2{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 
 /*utilities*/
 .container{
     width: 80%;
     margin: 0 auto;
 }
+
 
 /*header*/
 .site-init{
@@ -30,12 +50,16 @@ ul{
     height: 40vh;
     color: white;
 }
+.site-second{
+    background-color: black;
+    color: white;
+}
 .header-flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10rem;
 }
 .header-text{
     display: flex;
@@ -44,12 +68,29 @@ ul{
     height: 35vh;
 }
 .menu a{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 header p{
-    font-size: 20px;
+    font-size: 2rem;
 }
-
+@media(max-width:768px){
+    .site-init{
+        height: 22vh; 
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:768px){
+    .header-flex{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-flex{
+        height: 10vh;
+        text-align: center;
+    }
+}
 /*main*/
 .flex-about{
     display: flex;
@@ -58,7 +99,7 @@ header p{
     align-items: center;
 }
 .flex-about p{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .flex-item{
     background-color: #f3f3f3;
@@ -74,20 +115,32 @@ header p{
     width: 80%;
 }
 .price{
-    color: rgb(2, 198, 2);
+    color: var(--secondary);
     font-weight: bold;
 }
 button{
     display: block;
     border: none;
     width: 95%;
-    background-color: rgb(208, 139, 11);
+    background-color: var(--primary);
     color: white;
-    margin: 10px;
-    margin-top: 10px;
-    padding: 10px;
+    margin: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
     justify-content: center;
 }
+@media(max-width:768px){
+    .flex-about{
+        flex-direction: column;
+        align-content: center;
+    }
+}
+    .flex-houses{
+        flex-direction: column;
+        align-content: center;
+    }
+
+
 
 /*footer*/
 .footer-main{
@@ -101,9 +154,58 @@ button{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 100px;
+    padding: 10rem;
 }
 
 .flex-footer button{
-    margin: 20px;
+    margin: 2rem;
+}
+
+/*contact form*/
+
+fieldset{
+    padding: 1rem;
+}
+legend, label, input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input,
+.input-container select{
+    width: 70%;
+    background-color: #ededed;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.input-container textarea{
+    width: 70%;
+    background-color: #ededed;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+.input-container-radio{
+    display: flex;
+    justify-content: row;
+}
+.input-container-btn{
+    display: block;
+    border: none;
+    width: 5rem;
+    background-color: var(--secondary);
+    color: white;
+    margin: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
