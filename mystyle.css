@@ -36,7 +36,12 @@ p{
     font-size: 1.6rem;
     line-height: 1.5;
 }
-
+h4{
+    font-size: 4rem;
+}
+h5{
+    font-size: 1.2rem;
+}
 /*utilities*/
 .container{
     width: 80%;
@@ -66,7 +71,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 25vh;
+    height: 30vh;
 }
 .menu a{
     margin-right: 2rem;
@@ -114,6 +119,7 @@ header p{
     display: flex;
     flex-direction: row;
     width: 80%;
+    padding-top: 4rem;
 }
 .price{
     color: var(--secondary);
@@ -213,4 +219,22 @@ legend, label, input{
     padding: 1rem;
     font-size: 1.6rem;
     line-height: 1.5;
+}
+.about-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+}
+.about-flex h4{
+    padding-top: 2rem;
+}
+.about-flex p{
+    padding: 2rem;
+}
+.about-flex-text{
+    padding: 2rem;
+}
+.about-flex-text h2{
+    padding-top: 2rem;
 }
